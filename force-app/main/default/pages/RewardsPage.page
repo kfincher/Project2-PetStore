@@ -1,0 +1,55 @@
+<apex:page controller="RewardsPageController" lightningStylesheets="true">
+    <body style="background-color: #87ceeb !important"/>
+    <script>    
+    
+    function testinputJS(){
+        var str = document.getElementById('testinput').value;
+        passToController(str);
+    }
+   
+    </script>
+    
+    <apex:form >     
+        
+        <!-- Determine Customer Section -->
+        <apex:pageBlock title="Rewards Page">
+            <apex:pageBlockSection columns="2">
+                <div id="promptFirst" hidden=''>Hello! Please enter the email address associated with your rewards account. </div>
+                
+                <div>
+                    <apex:outputLabel id="lbl_Response" >{!response}</apex:outputLabel>
+                </div>
+                <div>
+                <input type="text" id="testinput"/>
+                <apex:commandButton onclick="testinputJS()" value="Enter Email" action="{!PointsDisplayTest}" reRender="test, TestDisplay, lbl_Response"  />    
+                </div>
+                <br/>
+                <apex:outputPanel id="test">
+                    <apex:outputText value="{!value}"/>
+                </apex:outputPanel>
+                <apex:actionFunction action="{!testinput}" name="passToController" rerender="test, TestDisplay, lbl_Response" >
+                    <apex:param value="" name="inpval"/>
+                </apex:actionFunction>
+                
+            </apex:pageBlockSection>
+            
+
+            <br/>
+            <br/>
+
+            <!-- Items To Order List -->
+            <apex:pageBlockSection id="listOfGoods" columns="2">
+                <div>Ball, 100 points <apex:commandButton action="{!purchase_100}" value="Order"/> </div>
+                <apex:image url="{!$Resource.DogBall}" width="150" height="150"/>
+                <div>Bone, 200 points <apex:commandButton action="{!purchase_200}" value="Order"/></div>
+                <apex:image url="{!$Resource.DogBone}" width="150" height="150"/>
+                <div>Leash, 300 points <apex:commandButton action="{!purchase_300}" value="Order"/></div>
+                <apex:image url="{!$Resource.DogLeash}" width="150" height="150"/>
+                <div>Litter Box, 400 points <apex:commandButton action="{!purchase_400}" value="Order"/></div>
+                <apex:image url="{!$Resource.CatBox}" width="150" height="150"/>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+    <apex:pageMessages >
+    </apex:pageMessages>
+</apex:page>

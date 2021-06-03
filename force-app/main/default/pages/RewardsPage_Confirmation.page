@@ -1,0 +1,15 @@
+<apex:page controller="RewardsPageController" lightningStylesheets="true">
+    <body style="background-color: #87ceeb !important"/>
+    <div>
+        Thank you <apex:outputLabel id="lbl_Response" >{!response}</apex:outputLabel>.    
+    </div>
+    <br/>
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockSection >
+                <apex:commandButton action="{!generatePDF}" value="PDF"/>
+                <apex:commandButton action="{!returnToMain}" value="Go Back"/>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>    
+</apex:page>

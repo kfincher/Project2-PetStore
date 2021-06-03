@@ -1,0 +1,28 @@
+<apex:page controller="DisplayPetHotel_CC" lightningStylesheets="true">
+    <body style="background-color: #87ceeb !important"/>
+    <apex:form >
+        <apex:pageBlock id="bookingList" title="Search Bookings">
+            <apex:panelGrid columns="4" >
+                <apex:outputText >Name Search:</apex:outputText>
+                <apex:panelGroup >
+                    <apex:inputText id="searchName" value="{!searchName}"/>
+                    <apex:commandButton status="notifyUser" reRender="bookingList" value="Search" action="{!Search}" />
+                </apex:panelGroup>
+                <apex:commandButton status="notifyUser" reRender="bookingList" value="Previous" title="Previous" action="{!setStandCon.previous}" disabled="{!NOT(setStandCon.hasPrevious)}" />
+                <apex:commandButton status="notifyUser" reRender="bookingList" value="Next" title="Next" action="{!setStandCon.next}" disabled="{!NOT(setStandCon.hasNext)}" />
+                <apex:actionStatus id="notifyUser" startText="Searching..." stopText=" "></apex:actionStatus>
+            </apex:panelGrid>
+            <apex:pageMessages />
+            <apex:pageBlockTable var="b" value="{!bookings}" >
+                <apex:column headerValue="Name">
+                  <apex:outputLink value="/{!b.id}">{!b.Name}</apex:outputLink>
+                </apex:column>
+                <apex:column value="{!b.Type_of_Pet__c}"/>
+                <apex:column value="{!b.Pet_Owner__c}"/>
+                <apex:column value="{!b.Check_In__c}"/>
+                <apex:column value="{!b.Check_Out__c}"/>
+            </apex:pageBlockTable>
+            <apex:outputText value="No records found" rendered="{!AND(NOT(matches), searched)}" />
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

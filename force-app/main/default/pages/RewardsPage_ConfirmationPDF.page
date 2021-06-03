@@ -1,0 +1,9 @@
+<apex:page controller="RewardsPageController" renderAs="pdf">
+    <div>
+    Thank you <apex:outputLabel id="lbl_Response" >{!response}</apex:outputLabel>.    
+    </div>
+    <br/>
+    <div>
+    Please save this pdf as a record of your order.    
+    </div>  
+</apex:page>

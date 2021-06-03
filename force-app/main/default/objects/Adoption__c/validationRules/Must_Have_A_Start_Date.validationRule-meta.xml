@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Must_Have_A_Start_Date</fullName>
+    <active>true</active>
+    <description>Every Adoption Post record must have a start date.</description>
+    <errorConditionFormula>ISBLANK( Shelter_Start_Time__c )</errorConditionFormula>
+    <errorDisplayField>Shelter_Start_Time__c</errorDisplayField>
+    <errorMessage>Every Adoption Post must have a start date.</errorMessage>
+</ValidationRule>

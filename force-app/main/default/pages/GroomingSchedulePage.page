@@ -1,0 +1,19 @@
+<apex:page controller="SchedExt" lightningStylesheets="true">
+    <body style="background-color: #87ceeb !important"/>
+    <apex:form >
+        <apex:pageBlock title="Appointments">
+            <apex:pageBlock title="Filter Based on Grooming Type: ">
+                <apex:inputField value="{!g.Grooming_Types__c}"/>
+                <apex:commandButton action="{!FilteredAllTimeSlots}" reRender="{!timeslots}" value="FILTER"/>
+                <apex:commandButton value="Clear records" action="{!clear}"/>
+            </apex:pageBlock>
+            <apex:pageBlockTable var="sch" value="{!timeslots}">
+                <apex:column value="{!sch.Appointment_Time__c}"/>
+                <apex:column value="{!sch.Name}"/>
+                <apex:column value="{!sch.Grooming__c}"/>
+                <apex:column value="{!sch.Client_Phone__c}"/>
+                <apex:column value="{!sch.Grooming_Types__c}"/>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

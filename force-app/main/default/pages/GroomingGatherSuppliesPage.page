@@ -1,0 +1,43 @@
+<apex:page controller="GroomingGuide_CC" lightningStylesheets="true">
+    <body style="background-color: #87ceeb !important"/>
+    <!-- Header Section -->
+    <apex:pageBlock >
+        <apex:pageBlockSection >
+            <h1>Pet Store</h1><br/>
+            <h2>Grooming Guide</h2><br/>
+            <h2>Gather Supplies</h2>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+    
+    <!-- Body Section -->
+    <apex:pageBlock >
+        <apex:pageBlockSection >
+            Be sure to gather all the supplies you will need for the grroming session.
+            You will likely need:<br/>
+            <ul>
+                <li>A Brush,</li>
+                <li>A Comb(for long haired breeds),</li>
+                <li>Scissors(for trimming and haircuts),</li>
+                <li>Electric Razor(for any shaving sessions),</li>
+                <li>Shampoo,</li>
+                <li>Conditioner,</li>
+                <li>Towels,</li>
+                <li>Blow Dryer,</li>
+                <li>Nail Clippers,</li>
+                <li>Tooth Brush,</li>
+                <li>Tooth Cleaner</li>
+            </ul>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+    
+    <!-- Bottom Link Section -->
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockSection >
+                <apex:commandLink value="Grooming Guide Home" action="{!GroomingGuideHome}"/>
+                <apex:commandLink value="PreBath" action="{!PreBath}"/>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+    
+</apex:page>

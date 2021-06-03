@@ -1,0 +1,6 @@
+<apex:page lightningStyleSheets="true" >
+    <apex:stylesheet value="/resources/htdocs/css/YEP.css"/>
+    <body style="background-color: #87ceeb !important">
+        <apex:image url="{!$Resource.Logo}" width="200" height="200" styleClass="Bark"/>
+    </body>
+</apex:page>

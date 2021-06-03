@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentAsset xmlns="http://soap.sforce.com/2006/04/metadata">
+    <isVisibleByExternalUsers>false</isVisibleByExternalUsers>
+    <language>en_US</language>
+    <masterLabel>dogpetshopferretclipartpngfavpngdqx</masterLabel>
+    <relationships>
+        <organization>
+            <access>VIEWER</access>
+        </organization>
+    </relationships>
+    <versions>
+        <version>
+            <number>1</number>
+            <pathOnClient>dog-pet-shop-ferret-clip-art-png-favpng-dqxiLrLiAT8WS75E2YuhFcjzh.jpg</pathOnClient>
+        </version>
+    </versions>
+</ContentAsset>

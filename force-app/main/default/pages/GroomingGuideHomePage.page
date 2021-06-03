@@ -1,0 +1,33 @@
+<apex:page controller="GroomingGuide_CC" lightningStylesheets="true">
+    <body style="background-color: #87ceeb !important"/>
+    <!-- Header Section -->
+    <apex:pageBlock >
+        <apex:pageBlockSection >
+            <h1>Pet Store</h1><br/>
+            <h2>Grooming Guide</h2>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+    
+    <!-- Body Link Section -->
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockSection >
+                <h2>Step 1</h2>
+                <apex:commandLink value="Gather Supplies" action="{!GatherSupplies}"/>
+            </apex:pageBlockSection>
+            <apex:pageBlockSection >
+                <h2>Step 2</h2>
+                <apex:commandLink value="PreBath" action="{!PreBath}"/>
+            </apex:pageBlockSection>
+            <apex:pageBlockSection >
+                <h2>Step 3</h2>
+                <apex:commandLink value="Bath" action="{!Bath}"/>
+            </apex:pageBlockSection>
+            <apex:pageBlockSection >
+                <h2>Step 4</h2>
+                <apex:commandLink value="PostBath" action="{!PostBath}"/>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+    
+</apex:page>

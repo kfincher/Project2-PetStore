@@ -1,0 +1,58 @@
+<apex:page controller="GroomingGuide_CC" lightningStylesheets="true">
+    <body style="background-color: #87ceeb !important"/>
+    <apex:pageBlock >
+        <apex:pageBlockSection >
+            <h1>Pet Store</h1><br/>
+            <h2>Grooming Guide</h2><br/>
+            <h2>PostBath</h2>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+    
+    <!-- Body Section -->
+    <apex:pageBlock >
+        <apex:pageBlockSection >
+            Check for Parasites<br/>
+            <ul>
+                <li>Check once more for any parasites</li>
+                <li>Check for fleas and ticks all over the body paying close attention to:</li>
+                <ul>
+                    <li>In and around the ears</li>
+                    <li>Around the eyelids</li>
+                    <li>Under the collar</li>
+                    <li>Under the front legs</li>
+                    <li>Between the back legs</li>
+                    <li>Between the toes</li>
+                    <li>Around the tail</li>
+                </ul>
+                <li>Check for mites in the ear</li>
+            </ul>
+            Brush/Comb<br/>
+            <ul>
+                <li>Gently brush and comb out the coat</li>
+            </ul>
+            Clean Ears<br/>
+            <ul>
+                <li>Gently clean the ears with a cotton pad</li>
+            </ul>
+            Trim Nails<br/>
+            <ul>
+                <li>Carefully trim the animal's nails, making sure not to injure the animal</li>
+            </ul>
+            Brush Teeth<br/>
+            <ul>
+                <li></li>
+            </ul>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+    
+    <!-- Bottom Link Section -->
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockSection >
+                <apex:commandLink value="Bath" action="{!Bath}"/>
+                <apex:commandLink value="Grooming Guide Home" action="{!GroomingGuideHome}"/>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+    
+</apex:page>

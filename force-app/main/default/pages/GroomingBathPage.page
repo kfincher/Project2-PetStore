@@ -1,0 +1,53 @@
+<apex:page controller="GroomingGuide_CC" lightningStylesheets="true">
+    <body style="background-color: #87ceeb !important"/>
+    <!-- Header Section -->
+    <apex:pageBlock >
+        <apex:pageBlockSection >
+            <h1>Pet Store</h1><br/>
+            <h2>Grooming Guide</h2><br/>
+            <h2>Bath</h2>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+    
+    <!-- Body Section -->
+    <apex:pageBlock >
+        <apex:pageBlockSection >
+            PreRinse<br/>
+            <ul>
+                <li>Gently rinse the animal</li>
+            </ul>
+            Shampoo<br/>
+            <ul>
+                <li>Lather the animal with shampoo</li>
+            </ul>
+            Rinse<br/>
+            <ul>
+                <li>Rinse the shampoo</li>
+            </ul>
+            Conditioner<br/>
+            <ul>
+                <li>Apply conditioner</li>
+            </ul>
+            Rinse<br/>
+            <ul>
+                <li>Gently rinse the animal</li>
+            </ul>
+            Dry<br/>
+            <ul>
+                <li>Gently dry with towel and blow dryer (for longer coated animals)</li>
+            </ul>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+    
+    <!-- Bottom Link Section -->
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockSection >
+                <apex:commandLink value="PreBath" action="{!PreBath}"/>
+                <apex:commandLink value="Grooming Guide Home" action="{!GroomingGuideHome}"/>
+                <apex:commandLink value="PostBath" action="{!PostBath}"/>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+    
+</apex:page>

@@ -1,0 +1,27 @@
+<apex:page controller="DisplayAdoptions_CC" lightningStylesheets="true">
+    <body style="background-color: #87ceeb !important"/>
+    <apex:form >
+        <apex:pageBlock id="petList" title="Search Pets">
+            <apex:panelGrid columns="4" >
+                <apex:outputText >Adoption Search:</apex:outputText>
+                <apex:panelGroup >
+                    <apex:inputText id="pet" value="{!pet}"/>
+                    <apex:commandButton status="notifyUser" reRender="petList" value="Search" action="{!Search}" />
+                </apex:panelGroup>
+                <apex:commandButton status="notifyUser" reRender="petList" value="Previous" title="Previous" action="{!setStandCon.previous}" disabled="{!NOT(setStandCon.hasPrevious)}" />
+                <apex:commandButton status="notifyUser" reRender="petList" value="Next" title="Next" action="{!setStandCon.next}" disabled="{!NOT(setStandCon.hasNext)}" />
+                <apex:actionStatus id="notifyUser" startText="Searching..." stopText=" "></apex:actionStatus>
+            </apex:panelGrid>
+            <apex:pageMessages />
+            <apex:pageBlockTable var="a" value="{!pets}" >
+                <apex:column headerValue="Name">
+                  <apex:outputLink value="/{!a.id}">{!a.Name}</apex:outputLink>
+                </apex:column>
+                <apex:column value="{!a.Animal_Type__c}"/>
+                <apex:column value="{!a.Animal_Age__c}"/>
+                <apex:column value="{!a.Status__c}"/>
+            </apex:pageBlockTable>
+            <apex:outputText value="No records found" rendered="{!AND(NOT(matches), searched)}" />
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

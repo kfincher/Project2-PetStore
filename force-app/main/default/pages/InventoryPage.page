@@ -1,0 +1,27 @@
+<apex:page controller="Inventory_CX" tabStyle="Inventory__c" lightningStylesheets="false">
+    <body style="background-color: #87ceeb !important"/>
+    <apex:form >
+        <apex:pageBlock id="inventoryList" title="Search For Item">
+            <apex:panelGrid cellspacing="4" columns="6" style="line-height:2.2em" >
+                <apex:outputText >Search Text:</apex:outputText>
+                <apex:panelGroup style="padding-right:1em">
+                    <apex:inputText style="vertical-align:middle;" id="searchText" value="{!searchText}"/>
+                    <apex:commandButton status="notifyUser" reRender="inventoryList" value="Search" action="{!Search}" />
+                </apex:panelGroup>
+                <apex:actionStatus id="notifyUser" startText="Searching..." stopText=" "></apex:actionStatus>
+            </apex:panelGrid>
+            <apex:pageMessages />
+            <apex:pageBlockTable var="inv" value="{!inventories}" >
+                <apex:column value="{!inv.Name}"/>
+                <apex:column value="{!inv.Item_Type__c}"/>
+                <apex:column value="{!inv.Item_Cost__c}"/>
+                <apex:column value="{!inv.Stock_Count__c}"/>
+            </apex:pageBlockTable>
+            <apex:commandButton status="notifyUser" reRender="inventoryList" value="|<" title="First" action="{!setCon.first}" disabled="{!NOT(setCon.hasPrevious)}" styleClass="btn" />
+            <apex:commandButton status="notifyUser" reRender="inventoryList" value="<" title="Previous" action="{!setCon.previous}" disabled="{!NOT(setCon.hasPrevious)}" styleClass="btn" />
+            <apex:commandButton status="notifyUser" reRender="inventoryList" value=">" title="Next" action="{!setCon.next}" disabled="{!NOT(setCon.hasNext)}" styleClass="btn" />
+            <apex:commandButton status="notifyUser" reRender="inventoryList" value=">|" title="Last" action="{!setCon.last}" disabled="{!NOT(setCon.hasNext)}" styleClass="btn" />
+            <apex:outputText value="No item found matching criteria" rendered="{!AND(NOT(matches), searched)}" />
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
