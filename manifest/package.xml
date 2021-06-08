@@ -39,6 +39,15 @@
 		<name>ApexTrigger</name>
 	</types>
 	<types>
+		<members>AdoptionAnimalsList</members>
+		<members>AdoptionAnimalsListHarnessApp</members>
+		<members>GroomingBathPage</members>
+		<members>GroomingScheduleApp</members>
+		<members>GroomingSchedulePage</members>
+		<members>HarnessApp</members>
+		<name>AuraDefinitionBundle</name>
+	</types>
+	<!--<types>
 		<members>Adoption__c.Animal_Age__c</members>
 		<members>Adoption__c.Animal_Type__c</members>
 		<members>Adoption__c.Current_Days_in_Shelter__c</members>
@@ -76,7 +85,7 @@
 		<members>Reward_Points__c.Phone_Number__c</members>
 		<members>Reward_Points__c.Points__c</members>
 		<name>CustomField</name>
-	</types>
+	</types>-->
 	<types>
 		<members>Adoption__c</members>
 		<members>Cat__c</members>

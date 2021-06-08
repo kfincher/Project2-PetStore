@@ -38,11 +38,11 @@ public with sharing class DisplayAdoptions_CC {
 
     // Action method initiated by user
     public void Search() {
-
+        System.debug(pet);
         if (String.isNotBlank(pet)) {
             List<sObject> pets = [SELECT Id, Name, Animal_Type__C, Animal_Age__c, Status__c From Adoption__c 
-                                  											WHERE Name LIKE :pet
-                                 											OR Animal_Type__c LIKE :pet];
+                                                                            WHERE Name LIKE :pet
+                                                                            OR Animal_Type__c LIKE :pet];
 
             setStandCon = new ApexPages.StandardSetController(pets);
             setStandCon.setPageNumber(1);

@@ -3,6 +3,10 @@
     <label></label>
     <name>Type_of_Pet__c</name>
     <picklistValues>
+        <masterLabel>Alligator</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
         <masterLabel>Cat</masterLabel>
         <translation></translation>
     </picklistValues>

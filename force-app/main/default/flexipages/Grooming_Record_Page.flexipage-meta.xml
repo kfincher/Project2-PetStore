@@ -80,6 +80,11 @@
                 <fieldItem>Record.Animal_Age__c</fieldItem>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldItem>Record.DogVac__c</fieldItem>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-319f0082-6a02-4b5b-a67e-d9ad4e47a981</name>
         <type>Facet</type>
     </flexiPageRegions>

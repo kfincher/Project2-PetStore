@@ -159,9 +159,10 @@
     <externalSharingModel>Private</externalSharingModel>
     <label>Adoption</label>
     <nameField>
+        <displayFormat>A-{0000}</displayFormat>
         <label>Animal Name</label>
         <trackHistory>false</trackHistory>
-        <type>Text</type>
+        <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Adoptions</pluralLabel>
     <searchLayouts></searchLayouts>

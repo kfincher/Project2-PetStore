@@ -1,0 +1,39 @@
+<aura:component >
+    <div class="colorbackground">
+    <lightning:card>
+            <h1>Pet Store</h1><br/>
+            <h2>Grooming Guide</h2><br/>
+            <h2>Bath</h2>
+    </lightning:card>
+    <lightning:card>
+            PreRinse<br/>
+            <ul>
+                <li>Gently rinse the animal</li>
+            </ul>
+            Shampoo<br/>
+            <ul>
+                <li>Lather the animal with shampoo</li>
+            </ul>
+            Rinse<br/>
+            <ul>
+                <li>Rinse the shampoo</li>
+            </ul>
+            Conditioner<br/>
+            <ul>
+                <li>Apply conditioner</li>
+            </ul>
+            Rinse<br/>
+            <ul>
+                <li>Gently rinse the animal</li>
+            </ul>
+            Dry<br/>
+            <ul>
+                <li>Gently dry with towel and blow dryer (for longer coated animals)</li>
+            </ul>
+
+    </lightning:card>
+    <lightning:card>
+    	INSERT LINKS SECTION HERE
+    </lightning:card>
+    </div>
+</aura:component>

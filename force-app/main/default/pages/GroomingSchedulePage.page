@@ -10,7 +10,7 @@
             <apex:pageBlockTable var="sch" value="{!timeslots}">
                 <apex:column value="{!sch.Appointment_Time__c}"/>
                 <apex:column value="{!sch.Name}"/>
-                <apex:column value="{!sch.Grooming__c}"/>
+                <!--apex:column value="{!sch.Grooming__c}"/-->
                 <apex:column value="{!sch.Client_Phone__c}"/>
                 <apex:column value="{!sch.Grooming_Types__c}"/>
             </apex:pageBlockTable>

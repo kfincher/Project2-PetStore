@@ -7,12 +7,22 @@ public class SchedExt {
     public void FilteredAllTimeSlots(){
         timeslots = new List<Grooming_Appointment__c>();
         if(g.Grooming_Types__c != NULL || g.Grooming_Types__c != g.Grooming_Types__c){
-            timeslots = [SELECT Appointment_Time__c, Name, Grooming__c,  
+            /*timeslots = [SELECT Appointment_Time__c, Name, Grooming__c,  
+                         Client_Phone__c, Grooming_Types__c  
+                         FROM Grooming_Appointment__c WHERE Grooming_Types__c =:g.Grooming_Types__c
+                         ORDER BY Appointment_Time__c ASC];*/
+            timeslots = [SELECT Appointment_Time__c, Name,  
                          Client_Phone__c, Grooming_Types__c  
                          FROM Grooming_Appointment__c WHERE Grooming_Types__c =:g.Grooming_Types__c
                          ORDER BY Appointment_Time__c ASC];
         }else{
+            /*
             timeslots = [SELECT Appointment_Time__c, Name, Grooming__c,  
+                         Client_Phone__c, Grooming_Types__c  
+                         FROM Grooming_Appointment__c
+                         ORDER BY Appointment_Time__c ASC];
+			*/
+            timeslots = [SELECT Appointment_Time__c, Name,  
                          Client_Phone__c, Grooming_Types__c  
                          FROM Grooming_Appointment__c
                          ORDER BY Appointment_Time__c ASC];

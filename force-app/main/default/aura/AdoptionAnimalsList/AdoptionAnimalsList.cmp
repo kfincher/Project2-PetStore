@@ -1,0 +1,15 @@
+<aura:component controller="DisplayAdoptions_CC_Aura">
+    <aura:attribute name="recordId" type="Id" />
+    <aura:attribute name="heyStore" type="String" />
+    <aura:attribute name="Contacts" type="Contact" />
+    <aura:attribute name="Columns" type="List" />
+    <force:recordData aura:id="accountRecord"
+                  recordId="{!v.recordId}"
+                  />
+    <aura:handler name="init" value="{!this}" action="{!c.myAction}" />
+    {! v.heyStore }
+	<!--<lightning:card iconName="standard:contact" title="{! 'Contact List for ' + v.Contact.Name}">
+    	<lightning:datatable data="{! v.Contacts }" columns="{! v.Columns }" keyField="Id" hideCheckboxColumn="true"/>
+        
+	</lightning:card>-->
+</aura:component>

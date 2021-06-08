@@ -21,6 +21,11 @@
                 <default>false</default>
                 <label>Dog</label>
             </value>
+            <value>
+                <fullName>Alligator</fullName>
+                <default>false</default>
+                <label>Alligator</label>
+            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>
