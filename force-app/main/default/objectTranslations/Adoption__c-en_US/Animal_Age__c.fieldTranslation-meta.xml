@@ -3,11 +3,27 @@
     <label></label>
     <name>Animal_Age__c</name>
     <picklistValues>
+        <masterLabel>Adolescent (10-20 years)</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
         <masterLabel>Adult</masterLabel>
         <translation></translation>
     </picklistValues>
     <picklistValues>
+        <masterLabel>Adult (20+ years)</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Egg (0-65 days)</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
         <masterLabel>Junior (1-2 years old)</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Juvenile (0-10 years)</masterLabel>
         <translation></translation>
     </picklistValues>
     <picklistValues>

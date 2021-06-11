@@ -37,6 +37,26 @@
                 <default>false</default>
                 <label>Senior</label>
             </value>
+            <value>
+                <fullName>Egg (0-65 days)</fullName>
+                <default>false</default>
+                <label>Egg (0-65 days)</label>
+            </value>
+            <value>
+                <fullName>Juvenile (0-10 years)</fullName>
+                <default>false</default>
+                <label>Juvenile (0-10 years)</label>
+            </value>
+            <value>
+                <fullName>Adolescent (10-20 years)</fullName>
+                <default>false</default>
+                <label>Adolescent (10-20 years)</label>
+            </value>
+            <value>
+                <fullName>Adult (20+ years)</fullName>
+                <default>false</default>
+                <label>Adult (20+ years)</label>
+            </value>
         </valueSetDefinition>
         <valueSettings>
             <controllingFieldValue>Dog</controllingFieldValue>
@@ -60,6 +80,22 @@
         <valueSettings>
             <controllingFieldValue>Cat</controllingFieldValue>
             <valueName>Kitten (5-8 months old)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Alligator</controllingFieldValue>
+            <valueName>Egg (0-65 days)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Alligator</controllingFieldValue>
+            <valueName>Juvenile (0-10 years)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Alligator</controllingFieldValue>
+            <valueName>Adolescent (10-20 years)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Alligator</controllingFieldValue>
+            <valueName>Adult (20+ years)</valueName>
         </valueSettings>
     </valueSet>
 </CustomField>

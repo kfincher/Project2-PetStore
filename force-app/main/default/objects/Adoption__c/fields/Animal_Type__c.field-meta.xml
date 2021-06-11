@@ -12,6 +12,11 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
+                <fullName>Alligator</fullName>
+                <default>false</default>
+                <label>Alligator</label>
+            </value>
+            <value>
                 <fullName>Dog</fullName>
                 <default>false</default>
                 <label>Dog</label>

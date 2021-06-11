@@ -54,8 +54,66 @@
     </flexiPageRegions>
     <flexiPageRegions>
         <itemInstances>
+            <fieldInstance>
+                <fieldItem>Record.Name</fieldItem>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldItem>Record.Item_Cost__c</fieldItem>
+            </fieldInstance>
+        </itemInstances>
+        <name>Facet-735f6b87-ffdd-4619-bfb8-721af4e582e8</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <fieldInstance>
+                <fieldItem>Record.Stock_Count__c</fieldItem>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldItem>Record.Item_Type__c</fieldItem>
+            </fieldInstance>
+        </itemInstances>
+        <name>Facet-caac50ca-21de-4f60-80e8-8aa3a72d1e17</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
             <componentInstance>
-                <componentName>force:detailPanel</componentName>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-735f6b87-ffdd-4619-bfb8-721af4e582e8</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:column</componentName>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-caac50ca-21de-4f60-80e8-8aa3a72d1e17</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:column</componentName>
+            </componentInstance>
+        </itemInstances>
+        <name>Facet-b19bbaed-cd53-49aa-9ba2-ecb4a0ec27d1</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>columns</name>
+                    <value>Facet-b19bbaed-cd53-49aa-9ba2-ecb4a0ec27d1</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label</name>
+                    <value>Inventory Description</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:fieldSection</componentName>
             </componentInstance>
         </itemInstances>
         <mode>Replace</mode>

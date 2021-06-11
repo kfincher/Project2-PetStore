@@ -15,7 +15,7 @@
             <apex:pageMessages />
             <apex:pageBlockTable var="a" value="{!pets}" >
                 <apex:column headerValue="Name">
-                  <apex:outputLink value="/{!a.id}">{!a.Name}</apex:outputLink>
+                  <apex:outputLink value="/{!a.id}">{!a.Pet__r.Name}</apex:outputLink>
                 </apex:column>
                 <apex:column value="{!a.Animal_Type__c}"/>
                 <apex:column value="{!a.Animal_Age__c}"/>

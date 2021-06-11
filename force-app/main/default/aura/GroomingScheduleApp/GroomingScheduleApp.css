@@ -1,5 +1,3 @@
-colorbackground.THIS {
-	background-color: #87ceeb;
-    width: 100%;
-    height: 100%
+.THIS.background{
+    background-color:red;
 }

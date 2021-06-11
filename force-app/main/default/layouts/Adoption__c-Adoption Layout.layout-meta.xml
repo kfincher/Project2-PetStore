@@ -23,10 +23,6 @@
                 <field>Vaccination__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Status__c</field>
-            </layoutItems>
-            <layoutItems>
                 <behavior>Required</behavior>
                 <field>Adoption_Cost__c</field>
             </layoutItems>
@@ -47,6 +43,10 @@
             <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>Current_Days_in_Shelter__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Status__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>

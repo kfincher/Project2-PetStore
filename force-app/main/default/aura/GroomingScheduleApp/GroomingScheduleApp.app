@@ -1,5 +1,3 @@
 <aura:application extends="force:slds">
-    <body class="colorbackground">
-    	<c:GroomingBathPage/>
-    </body>
+    <c:Guide/>
 </aura:application>

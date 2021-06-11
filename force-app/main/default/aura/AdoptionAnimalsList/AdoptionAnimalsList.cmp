@@ -1,15 +1,28 @@
-<aura:component controller="DisplayAdoptions_CC_Aura">
+<aura:component controller="DisplayAdoptions_CC_Aura" implements="force:appHostable" access="global">
+     <!--<aura:handler name="init" value="{!this}" action="{!c.myAction}" />-->
     <aura:attribute name="recordId" type="Id" />
     <aura:attribute name="heyStore" type="String" />
-    <aura:attribute name="Contacts" type="Contact" />
+    <aura:attribute name="Adoptions" type="Object" />
     <aura:attribute name="Columns" type="List" />
-    <force:recordData aura:id="accountRecord"
-                  recordId="{!v.recordId}"
-                  />
-    <aura:handler name="init" value="{!this}" action="{!c.myAction}" />
-    {! v.heyStore }
-	<!--<lightning:card iconName="standard:contact" title="{! 'Contact List for ' + v.Contact.Name}">
-    	<lightning:datatable data="{! v.Contacts }" columns="{! v.Columns }" keyField="Id" hideCheckboxColumn="true"/>
-        
-	</lightning:card>-->
+    <aura:attribute name="Pet" type="String" />
+    {!v.Adoptions}
+    {!v.Columns}
+    <h1>Search Pets</h1>
+    <aura:attribute name="searchText" type="String" default=""/>
+    Adoption Search:
+    <div class="slds-form-element slds-lookup" data-select="single">
+        <div class="slds-form-element__control">
+            <div class="slds-input-has-icon slds-input-has-icon--right">
+                <lightning:buttonIcon iconName="utility:search" variant="bare" onclick="{! c.myAction }" alternativeText="Search" class="slds-input__icon" />
+                <ui:inputText value="{!v.Pet}" class="slds-lookup__search-input slds-input" placeholder="Search" />
+            </div>
+        </div>
+    </div>
+    
+    <div style="height:400px">
+        <p class="slds-p-horizontal_small">
+        <lightning:datatable aura:id="dataTable" keyField="id" data="{!v.Adoptions}" columns="{!v.Columns}" hideCheckboxColumn="true"></lightning:datatable>
+        </p>
+    </div>
+
 </aura:component>
