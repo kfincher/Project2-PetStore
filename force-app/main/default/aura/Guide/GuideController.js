@@ -2,8 +2,6 @@
     
     onInit : function(component, event, helper){
         helper.getGuide(component);
-        //helper.guideMapInit(component);
-        //helper.contentIndexInit(component);
     },
     
     

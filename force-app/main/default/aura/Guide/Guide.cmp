@@ -6,7 +6,6 @@
     <aura:attribute name="currentPage" type="Guide__c"/>
     <aura:attribute name="list" type="list" default="1, 2, 3, 4, 5"/>
     <aura:attribute name="index" type="integer" default="1"/>
-    <aura:attribute name="guideType" type="String" default="Grooming"/>
     
 	<div class="background">
     	<c:GroomingHeaderCard currentHeader="{!v.currentPage.Page_Title__c}"/>

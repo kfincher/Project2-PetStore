@@ -1,5 +1,4 @@
 ({
-    guideMap : 1,
     
     contentStart : 0,
     contentEnd : 1,
@@ -7,7 +6,6 @@
     getGuide : function(component) {
         
         var guideRetrieve = component.get("c.getGuides");
-        guideRetrieve.setParams({"guideType" : component.get("v.guideType")});
         
         guideRetrieve.setCallback(this, function(response){
             
@@ -41,17 +39,8 @@
     },
     
     contentIndexInit : function(guide) {
+    //Set last page index
         this.contentEnd = guide.length-1;
-    },
-    
-    guideMapInit : function(component) {
-		this.guideMap = new Map();
-        var guide = component.get("guide")
-        
-        for (page in guide){
-            guideMap.set("")
-        }
-        
-    },
+    }
 
 })

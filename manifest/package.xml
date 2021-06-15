@@ -5,6 +5,7 @@
 		<members>AdoptionPostHandlerRemove</members>
 		<members>AdoptionPostTest</members>
 		<members>buildQuery</members>
+		<members>buildQueryTest </members>
 		<members>Controller_Test</members>
 		<members>DisplayAdoptions_CC</members>
 		<members>DisplayAdoptions_CC_Aura</members>
@@ -15,7 +16,9 @@
 		<members>GroomingGuide_CC</members>
 		<members>GroomingGuide_CC_Test</members>
 		<members>GroomingScheduleController</members>
+		<members>GroomingScheduleControllerTest</members>
 		<members>GuideController</members>
+		<members>GuideControllerTest</members>
 		<members>InventoryTest</members>
 		<members>Inventory_CX_Aura</members>
 		<members>Inventory_CX</members>
