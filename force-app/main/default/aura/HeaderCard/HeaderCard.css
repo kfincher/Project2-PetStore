@@ -1,0 +1,20 @@
+div.THIS{
+    background-color: white;
+    border-color:black;
+    border-width: 1pt;
+    border-radius: 5pt;
+    border-style: solid;
+    
+    margin: 1em 1em;
+    padding: 1em 1.5em;
+    height: auto;
+    width: auto;
+}
+
+.THIS h1 {
+	font-size:3em;
+}
+
+.THIS h2 {
+    font-size: 1.5em;
+}

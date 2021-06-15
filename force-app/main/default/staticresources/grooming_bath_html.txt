@@ -1,0 +1,24 @@
+            PreRinse<br/>
+            <ul>
+                <li>Gently rinse the animal</li>
+            </ul>
+            Shampoo<br/>
+            <ul>
+                <li>Lather the animal with shampoo</li>
+            </ul>
+            Rinse<br/>
+            <ul>
+                <li>Rinse the shampoo</li>
+            </ul>
+            Conditioner<br/>
+            <ul>
+                <li>Apply conditioner</li>
+            </ul>
+            Rinse<br/>
+            <ul>
+                <li>Gently rinse the animal</li>
+            </ul>
+            Dry<br/>
+            <ul>
+                <li>Gently dry with towel and blow dryer (for longer coated animals)</li>
+            </ul>

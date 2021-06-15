@@ -4,19 +4,27 @@
 		<members>AdoptionPostHandler</members>
 		<members>AdoptionPostHandlerRemove</members>
 		<members>AdoptionPostTest</members>
+		<members>buildQuery</members>
 		<members>Controller_Test</members>
 		<members>DisplayAdoptions_CC</members>
+		<members>DisplayAdoptions_CC_Aura</members>
 		<members>DisplayPetHotel_CC</members>
+		<members>DisplayPetHotel_CC_Aura</members>
 		<members>GroomingAppHandler</members>
 		<members>GroomingAppointmentTest</members>
 		<members>GroomingGuide_CC</members>
 		<members>GroomingGuide_CC_Test</members>
+		<members>GroomingScheduleController</members>
+		<members>GuideController</members>
 		<members>InventoryTest</members>
+		<members>Inventory_CX_Aura</members>
 		<members>Inventory_CX</members>
+		<members>RewardController</members>
 		<members>RewardsPageController</members>
 		<members>RewardsPageController_Test</members>
 		<members>SchedExt</members>
 		<members>SchedExt_Test</members>
+		<members>TestClassDylan</members>
 		<name>ApexClass</name>
 	</types>
 	<types>
@@ -39,83 +47,122 @@
 		<name>ApexTrigger</name>
 	</types>
 	<types>
+		<members>Adoption__c.Vaccination_Check_of_Animal_Shelter</members>
+		<members>Grooming_Appointment__c.Check_On_Client_s_Feedback_on_Task</members>
+		<name>ApprovalProcess</name>
+	</types>
+	<types>
 		<members>AdoptionAnimalsList</members>
 		<members>AdoptionAnimalsListHarnessApp</members>
+		<members>adzhitenovTestHarness</members>
+		<members>Appointments</members>
+		<members>AppointmentListEvent</members>
+		<members>apptSelectedEvent</members>
+		<members>BodyCard</members>
+		<members>DisplayDate</members>
+		<members>DisplayTime</members>
+		<members>DisplayGroomingAppointmentInfo</members>
+		<members>DylansComponent</members>
+		<members>DylansPage</members>
+		<members>GroomingApptsList</members>
 		<members>GroomingBathPage</members>
+		<members>GroomingHeaderCard</members>
 		<members>GroomingScheduleApp</members>
 		<members>GroomingSchedulePage</members>
+		<members>Guide</members>
+		<!--<members>GuidePage</members>-->
 		<members>HarnessApp</members>
+		<members>HeaderCard</members>
+		<members>Inventory</members>
+		<members>InventoryPage</members>
+		<members>PetHotelBookingCreation</members>
+		<members>PetHotelBookingCreationHarnessApp</members>
+		<members>PetHotelBookingsList</members>
+		<members>PetHotelBookingsListHarnessApp</members>
+		<members>RewardRecordCreator</members>
 		<name>AuraDefinitionBundle</name>
 	</types>
-	<!--<types>
-		<members>Adoption__c.Animal_Age__c</members>
-		<members>Adoption__c.Animal_Type__c</members>
-		<members>Adoption__c.Current_Days_in_Shelter__c</members>
-		<members>Adoption__c.Currently_in_Shelter__c</members>
-		<members>Adoption__c.Shelter_Start_Time__c</members>
-		<members>Adoption__c.Status__c</members>
-		<members>Adoption__c.Vaccination__c</members>
-		<members>Dog__c.Vaccination__c</members>
-		<members>Grooming_Appointment__c.Appointment_Time__c</members>
-		<members>Grooming_Appointment__c.Client_Phone__c</members>
-		<members>Grooming_Appointment__c.Current_Appointment__c</members>
-		<members>Grooming_Appointment__c.Groomer__c</members>
-		<members>Grooming_Appointment__c.Grooming_Types__c</members>
-		<members>Grooming_Appointment__c.Grooming__c</members>
-		<members>Grooming_Appointment__c.Satisfaction_Rating__c</members>
-		<members>Grooming_Appointment__c.Status__c</members>
-		<members>Grooming__c.Animal_Age__c</members>
-		<members>Grooming__c.Animal_Type__c</members>
-		<members>Grooming__c.DogVac__c</members>
-		<members>Grooming__c.Status__c</members>
-		<members>Grooming__c.Vaccination_Check__c</members>
-		<members>Inventory__c.Item_Cost__c</members>
-		<members>Inventory__c.Item_Type__c</members>
-		<members>Inventory__c.Stock_Count__c</members>
-		<members>Pet_Hotel__c.Check_In__c</members>
-		<members>Pet_Hotel__c.Check_Out__c</members>
-		<members>Pet_Hotel__c.Pet_Owner__c</members>
-		<members>Pet_Hotel__c.Playtime_Activities__c</members>
-		<members>Pet_Hotel__c.Room_Number__c</members>
-		<members>Pet_Hotel__c.Room_Type__c</members>
-		<members>Pet_Hotel__c.Type_of_Pet__c</members>
-		<members>Reward_Points__c.Address__c</members>
-		<members>Reward_Points__c.Customer_Name__c</members>
-		<members>Reward_Points__c.Email__c</members>
-		<members>Reward_Points__c.Phone_Number__c</members>
-		<members>Reward_Points__c.Points__c</members>
+	<types>	
+		<members>Case.QuickResponse</members>
+		<name>AutoResponseRule</name>
+	</types>
+	<types>	
+		<members>HahaDogPlaneGoSoarHaha</members>
+		<name>ContentAsset</name>
+	</types>
+	<types>	
+		<members>Pet_Store</members>
+		<name>CustomApplication</name>
+	</types>
+	<types>	
+		<members>Account.Pet__c</members>
+		<members>Account.User__c</members>
+		<members>Account.Adoption__c</members>
+		<members>Account.Pet_Hotel__c</members>
+		<members>Product2.Currency__c</members>
+		<members>Product2.Is_A_Service__c</members>
+		<members>Product2.Stock_Count__c</members>
 		<name>CustomField</name>
-	</types>-->
+	</types>
 	<types>
+		<!--<members>Account</members>-->
+		<members>Actual_Pet_Hotel__c</members>
 		<members>Adoption__c</members>
 		<members>Cat__c</members>
+		<members>Client__c</members>
 		<members>Dog__c</members>
 		<members>Employee__c</members>
+		<members>Employee_Hotel__c</members>
+		<members>Expense__c</members>
+		<members>Expense_Report__c</members>
 		<members>Grooming_Appointment__c</members>
 		<members>Grooming__c</members>
+		<members>Guide__c</members>
 		<members>Inventory__c</members>
+		<members>Pet__c</members>
 		<members>Pet_Hotel__c</members>
+		<!--<members>Product2</members>-->
 		<members>Reward_Points__c</members>
 		<name>CustomObject</name>
 	</types>
 	<types>
-		<members>Adoption__c-en_US</members>
-		<members>Cat__c-en_US</members>
-		<members>Dog__c-en_US</members>
-		<members>Employee__c-en_US</members>
-		<members>Grooming_Appointment__c-en_US</members>
-		<members>Grooming__c-en_US</members>
-		<members>Inventory__c-en_US</members>
-		<members>Pet_Hotel__c-en_US</members>
-		<members>Reward_Points__c-en_US</members>
-		<name>CustomObjectTranslation</name>
-	</types>
-	<types>
+		<members>Actual_Pet_Hotel__c</members>
 		<members>Adoption__c</members>
+		<members>Client__c</members>
+		<members>Dog__c</members>
+		<members>Employee__c</members>
+		<members>Expense__c</members>
+		<members>Grooming_Appointment__c</members>
 		<members>Grooming__c</members>
-		<members>Inventory__c</members>
+		<members>Guide__c</members>
+		<members>Inventory__c</members> 
+		<members>Pet__c</members> 
 		<members>Reward_Points__c</members>
 		<name>CustomTab</name>
+	</types>
+	<types>	
+		<members>CompanyDashboards</members>
+		<members>CompanyDashboards/qQTqxJRzIrMSqBADlvPCKVnxNmtnKn</members>
+		<name>Dashboard</name>
+	</types>
+	<!--<types>
+		<members>EmailToCase</members>
+		<name>EmailServicesFunction</name>
+	</types>-->
+	<types>
+		<members>unfiled$public/Case_Response</members>
+		<members>unfiled$public/SUPPORTCaseescalationnotificationSAMPLE</members>
+		<members>unfiled$public/SUPPORTCaseescalationnotificationSAMPLE</members>
+        <name>EmailTemplate</name>
+	</types>
+	<types>
+		<members>Case.Escalate after 2 days</members>
+		<members>Case.Notify of ownerless cases</members>
+		<name>EscalationRule</name>
+	</types>
+	<types>
+		<members>Case</members>
+		<name>EscalationRules</name>
 	</types>
 	<types>
 		<members>Adoption_Record_Page</members>
@@ -127,7 +174,21 @@
 		<members>Inventory</members>
 		<members>LightningSalesConsole_UtilityBar</members>
 		<members>LightningService_UtilityBar</members>
+		<members>Pet_Store_UtilityBar</members>
 		<name>FlexiPage</name>
+	</types>
+	<types>
+		<members>Adoption_Process</members>
+		<members>Grooming_Appointment</members>
+		<members>Pet_Adoption</members>
+		<members>Pet_Hotel_Process</members>
+		<members>Pet_Hotel_Process</members>
+		<name>Flow</name>
+	</types>
+	<types>
+		<members>Animal_Type</members>
+		<members>Guides</members>
+		<name>GlobalValueSet</name>
 	</types>
 	<types>
 		<members>Adoption__c-Adoption Layout</members>
@@ -142,12 +203,40 @@
 		<name>Layout</name>
 	</types>
 	<types>
+		<members>Account.Customers</members>
+		<members>Account.Pet_Owner</members>
 		<members>Adoption__c.All</members>
-		<members>Grooming__c.All</members>
+		<members>Adoption__c.Employee_Adoption</members>
+		<!--<members>Case.Employee_Case</members>-->
+		<!--<members>Grooming__c.All</members>-->
+		<!--<members>Grooming_Appointment__c.Employee_Grooming_Appointment</members>-->
 		<members>Inventory__c.All</members>
+		<members>Pet__c.Client_Pet</members>
+		<members>Pet__c.Pets</members>
+		<members>Pet__c.Up_For_Adoption</members>
 		<members>Pet_Hotel__c.All</members>
 		<members>Reward_Points__c.All</members>
 		<name>ListView</name>
+	</types>
+	<types>
+		<members>Pet Store Profile</members>
+		<name>Profile</name>
+	</types>
+	<types>
+		<members>Employee</members>
+		<name>Queue</name>
+	</types>
+	<types>
+		<members>RecruitingReports</members>
+		<members>RecruitingReports/Service_Records_Report_shm</members>
+		<members>RecruitingReports/New_Service_Records_with_Products_Report_ZPK</members>
+		<name>Report</name>
+	</types>
+	<types>
+		<members>Account.Pet_Owner</members>
+		<members>Pet__c.Adoption</members>
+		<members>Pet__c.Pet</members>
+		<name>RecordType</name>
 	</types>
 	<types>
 		<members>Adoption_Advisor</members>
@@ -163,14 +252,20 @@
 		<members>Grooming__c</members>
 		<members>Inventory__c</members>
 		<members>Pet_Hotel__c</members>
+		<members>Product2</members>
 		<members>Reward_Points__c</members>
 		<name>SharingRules</name>
 	</types>
 	<types>
-		<members>CatBox</members>
-		<members>DogBall</members>
-		<members>DogBone</members>
-		<members>DogLeash</members>
+        <members>Case</members>
+        <name>Settings</name>
+    </types>
+	<types>
+        <members>*</members>
+        <name>StandardValueSet</name>
+    </types>
+	<types>
+		<members>*</members>
 		<name>StaticResource</name>
 	</types>
 	<types>
@@ -189,6 +284,19 @@
 		<members>Adoption__c.Must_Have_A_Start_Date</members>
 		<members>Grooming_Appointment__c.Must_Have_A_Cell_Phone</members>
 		<name>ValidationRule</name>
+	</types>
+	<types>
+		<members>Adoption__c</members>
+		<members>Grooming_Appointment__c</members>
+		<name>Workflow</name>
+	</types>
+	<types>
+		<members>Adoption__c.Check_To_True</members>
+		<members>Adoption__c.VaccinationUnchecked</members>
+		<members>Grooming_Appointment__c.Set_Rating_to_Neutral</members>
+		<members>Grooming_Appointment__c.Set_Rating_to_Waiting_for_Client_Respons</members>
+		<members>Grooming_Appointment__c.Status_to_Amazing</members>
+		<name>WorkflowFieldUpdate</name>
 	</types>
 	<version>51.0</version>
 </Package>

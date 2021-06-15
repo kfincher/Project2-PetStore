@@ -55,11 +55,7 @@
     <flexiPageRegions>
         <itemInstances>
             <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>required</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Name</fieldItem>
+                <fieldItem>Record.Pet__c</fieldItem>
             </fieldInstance>
         </itemInstances>
         <itemInstances>

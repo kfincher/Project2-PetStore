@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Check_To_True</fullName>
+        <field>Vaccination__c</field>
+        <literalValue>1</literalValue>
+        <name>Check To True</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>VaccinationUnchecked</fullName>
+        <field>Vaccination__c</field>
+        <literalValue>0</literalValue>
+        <name>VaccinationUnchecked</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <tasks>
+        <fullName>Check_Clinic</fullName>
+        <assignedTo>Employee</assignedTo>
+        <assignedToType>role</assignedToType>
+        <description>Check with the Clinic for this dog.</description>
+        <dueDateOffset>2</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Adoption__c.Shelter_Start_Time__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Check Clinic</subject>
+    </tasks>
+</Workflow>

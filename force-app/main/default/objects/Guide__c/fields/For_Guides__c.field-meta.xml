@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>For_Guides__c</fullName>
+    <description>The guides this page is for.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The guides this page is intended for.</inlineHelpText>
+    <label>For Guides</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Guides</valueSetName>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

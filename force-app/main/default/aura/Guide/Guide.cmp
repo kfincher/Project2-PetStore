@@ -1,0 +1,23 @@
+<aura:component controller="GuideController">
+    
+    <aura:handler name="init" value="{!this}" action="{!c.onInit}"/>
+    
+    <aura:attribute name="guide" type="Guide__c[]"/>
+    <aura:attribute name="currentPage" type="Guide__c"/>
+    <aura:attribute name="list" type="list" default="1, 2, 3, 4, 5"/>
+    <aura:attribute name="index" type="integer" default="1"/>
+    <aura:attribute name="guideType" type="String" default="Grooming"/>
+    
+	<div class="background">
+    	<c:GroomingHeaderCard currentHeader="{!v.currentPage.Page_Title__c}"/>
+        
+        <aura:iteration items="{!v.guide}" var="page">
+            <lightning:button label="{!page.Order__c}" onclick="{!c.setCurrentContent}">{!page.Page_Title__c}</lightning:button>
+        </aura:iteration>
+        
+    	<c:BodyCard currentContent="{!v.currentPage.Instructions_HTML__c}"/>
+        
+        <lightning:button label="Previous" onclick="{!c.prevContent}"/>
+		<lightning:button label="Next" onclick="{!c.nextContent}"/>
+    </div>
+</aura:component>

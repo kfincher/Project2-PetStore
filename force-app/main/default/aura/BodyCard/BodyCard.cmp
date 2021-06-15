@@ -1,0 +1,10 @@
+<aura:component >
+    <aura:handler name="render" value="{!this}" action="{!c.onRender}"/>
+    
+    <aura:attribute name="currentContent" type="String" default="No guide selected"/>
+    
+    <div class="card, slds-text-longform" id="CARD">
+        
+    </div>
+    
+</aura:component>

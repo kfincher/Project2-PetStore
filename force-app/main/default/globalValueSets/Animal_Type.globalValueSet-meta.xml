@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Dog</fullName>
+        <default>false</default>
+        <label>Dog</label>
+    </customValue>
+    <customValue>
+        <fullName>Cat</fullName>
+        <default>false</default>
+        <label>Cat</label>
+    </customValue>
+    <customValue>
+        <fullName>Alligator</fullName>
+        <default>false</default>
+        <label>Alligator</label>
+    </customValue>
+    <customValue>
+        <fullName>Hamster</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Hamster</label>
+    </customValue>
+    <customValue>
+        <fullName>Bird</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Bird</label>
+    </customValue>
+    <masterLabel>Animal Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

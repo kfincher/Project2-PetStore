@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Grooming_Appointment_Points__c</fullName>
+    <description>Total number of points accumulated by this customer from grooming appointments.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Your total number of points from grooming appointments, counted across all pets.</inlineHelpText>
+    <label>Grooming Appointment Points</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,40 @@
+<aura:component controller="DisplayPetHotel_CC_Aura" implements="forceCommunity:availableForAllPageTypes" access="global">
+    <aura:attribute name="recordId" type="Id" />
+    <aura:attribute name="listIndex" type="Integer" />
+    <aura:attribute name="PetHotel" type="Object" />
+    <aura:attribute name="Columns" type="List" />
+    <aura:attribute name="rowCols" type="List" />
+    <aura:attribute name="prevOn" type="Boolean" default="true"/>
+    <aura:attribute name="nextOn" type="Boolean" default="true"/>
+    <aura:attribute name="SearchValue" type="String" />
+    <aura:handler name="init" value="{!this}" action="{!c.init}"/>
+    <aura:attribute name="searchText" type="String" default=""/>
+    
+    
+    <div style="height:350px">
+        <p class="slds-p-horizontal_small">
+            <br/>
+            <div id="BoldSearch">Search Bookings</div>
+            
+            <div id="SearchMove">
+                <div class="slds-form-element slds-lookup slds-m-left_medium slds-m-top_medium" data-select="single">
+                    <div class="slds-form-element__control">
+                        <div class="slds-input-has-icon slds-input-has-icon--right slds-m-bottom_x-small">
+                            <!--<lightning:buttonIcon iconName="utility:search" variant="bare" onclick="{! c.myAction }" alternativeText="Search" class="slds-input__icon" />-->
+                            <div class="slds-grid" style="height:30px">
+                                Name Search:
+                                <lightning:input variant="label-inline" value="{!v.SearchValue}" class="slds-p-around_none slds-size_1-of-6 slds-m-right_x-small"  placeholder="" />
+                                <lightning:button label="Search" class="slds-m-right_small" title="Search" onclick="{! c.myAction }"/>
+                                
+                                <lightning:button label="Previous" disabled="{!v.prevOn}" class="slds-m-right_small slds-button_neutral" title="Previous" onclick="{! c.prevList }"/>
+                                <lightning:button label="Next" disabled="{!v.nextOn}" title="Next" onclick="{! c.nextList }"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <lightning:datatable aura:id="dataTable" keyField="id" data="{!v.PetHotel}" columns="{!v.Columns}" hideCheckboxColumn="true"></lightning:datatable>
+            <div id='resultsTag'></div>
+        </p>
+    </div>
+</aura:component>

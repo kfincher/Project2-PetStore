@@ -1,3 +1,21 @@
-<aura:component >
-    <c:Guide/>
+<aura:component controller="GroomingScheduleController">
+    
+    <aura:registerEvent name="apptListChange" type="c:AppointmentListEvent"/>
+    
+    <aura:attribute name="options" type="List" default="[{label : 'Teeth Cleaning', value:'Teeth Cleaning'},
+                                                        {label : 'Bathing', value:'Bathing'},
+                                                        {label : 'Nail Trimming', value:'Nail Trimming'}]"/>
+    <aura:attribute name="selectedApptTypes" type="List" default="[]"/>
+    <aura:attribute name="appointments" type="Grooming_Appointment__c[]"/>
+    
+    <lightning:duallistbox name="Appointment Types"
+                           label="Appointment Types"
+                           selectedLabel="selectedType"
+                           fieldLevelHelp="Select the type(s) of appointments to search for"
+                           options="{!v.options}"
+                           value="{!v.selectedApptTypes}"
+                           onchange="{!c.updateApptTypes}"/>
+    <lightning:button label="All" onclick="{!c.getApptHelper}">Find All Appointments</lightning:button>
+    <lightning:button label="Today" onclick="{!c.getApptHelper}">Find Today's Appointments</lightning:button>
+    <lightning:button label="Upcoming" onclick="{!c.getApptHelper}">Find Upcoming Appointments</lightning:button>
 </aura:component>

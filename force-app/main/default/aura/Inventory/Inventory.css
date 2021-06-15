@@ -1,0 +1,8 @@
+h1.THIS {
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.THIS .slds-grid_align-end
+{
+    justify-content: left !important; 
+}

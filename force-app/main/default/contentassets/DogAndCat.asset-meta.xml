@@ -3,11 +3,11 @@
     <isVisibleByExternalUsers>false</isVisibleByExternalUsers>
     <language>en_US</language>
     <masterLabel>DogAndCat</masterLabel>
-    <originNetwork>PetStoreSoars</originNetwork>
+    <originNetwork>Pet Store</originNetwork>
     <relationships>
         <network>
             <access>VIEWER</access>
-            <name>PetStoreSoars</name>
+            <name>Pet Store</name>
         </network>
         <workspace>
             <access>INFERRED</access>

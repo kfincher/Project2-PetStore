@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Animal_Age__c</fullName>
+    <externalId>false</externalId>
+    <label>Animal Age</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Animal_Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Puppy (5-8 months old)</fullName>
+                <default>false</default>
+                <label>Puppy (5-8 months old)</label>
+            </value>
+            <value>
+                <fullName>Kitten (5-8 months old)</fullName>
+                <default>false</default>
+                <label>Kitten (5-8 months old)</label>
+            </value>
+            <value>
+                <fullName>Junior (1-2 years old)</fullName>
+                <default>false</default>
+                <label>Junior (1-2 years old)</label>
+            </value>
+            <value>
+                <fullName>Adult</fullName>
+                <default>false</default>
+                <label>Adult</label>
+            </value>
+            <value>
+                <fullName>Senior</fullName>
+                <default>false</default>
+                <label>Senior</label>
+            </value>
+            <value>
+                <fullName>Egg (0-65 days)</fullName>
+                <default>false</default>
+                <label>Egg (0-65 days)</label>
+            </value>
+            <value>
+                <fullName>Juvenile (0-10 years)</fullName>
+                <default>false</default>
+                <label>Juvenile (0-10 years)</label>
+            </value>
+            <value>
+                <fullName>Adolescent (10-20 years)</fullName>
+                <default>false</default>
+                <label>Adolescent (10-20 years)</label>
+            </value>
+            <value>
+                <fullName>Adult (20+ years)</fullName>
+                <default>false</default>
+                <label>Adult (20+ years)</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Dog</controllingFieldValue>
+            <valueName>Puppy (5-8 months old)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dog</controllingFieldValue>
+            <controllingFieldValue>Cat</controllingFieldValue>
+            <valueName>Junior (1-2 years old)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dog</controllingFieldValue>
+            <controllingFieldValue>Cat</controllingFieldValue>
+            <valueName>Adult</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dog</controllingFieldValue>
+            <controllingFieldValue>Cat</controllingFieldValue>
+            <valueName>Senior</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cat</controllingFieldValue>
+            <valueName>Kitten (5-8 months old)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Alligator</controllingFieldValue>
+            <valueName>Egg (0-65 days)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Alligator</controllingFieldValue>
+            <valueName>Juvenile (0-10 years)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Alligator</controllingFieldValue>
+            <valueName>Adolescent (10-20 years)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Alligator</controllingFieldValue>
+            <valueName>Adult (20+ years)</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,6 @@
+<aura:component >
+    <aura:handler name="render" value="{!this}" action="{!c.renderTime}"/>
+    <aura:attribute name="time" type="String"/>
+    <aura:attribute name="formattedTime" type="String"/>
+    {!v.formattedTime}
+</aura:component>

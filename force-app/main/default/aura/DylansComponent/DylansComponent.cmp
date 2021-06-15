@@ -1,0 +1,71 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" controller="RewardController" >
+    
+    <!--Attributes -->
+	<aura:attribute name="pid" type="Id"/>
+    <aura:attribute name="data" type="Reward_Points__c"/>
+    <aura:attribute name="columns" type="list"/>
+    <aura:attribute name="ballPurchase" type="integer" default="100"/>
+    <aura:attribute name="bonePurchase" type="integer" default="200"/>
+    <aura:attribute name="leashPurchase" type="integer" default="300"/>
+    <aura:attribute name="catBoxPurchase" type="integer" default="400"/>
+    <aura:attribute name="pointTotal" type="integer" />
+    
+    <!--Heading-->
+    <div style="text-align: center; background-color: #d8f0fe">
+        <h1 style="font-size: 2em; padding: 7px">Pet Store Rewards Shop</h1>
+        <p>Use your points for fun rewards!</p>
+    </div>
+    
+    
+    <!-- Email Input and Buttons -->
+    <div style="text-align: center; background-color: #d8f0fe; padding-bottom: 20px">
+        <lightning:input aura:id="emailInput" type="email" name="email6" required="true" value="Enter Email" />
+        <lightning:button variant="Success" label="Enter" title="Success" onclick="{! c.handleClick }"/>
+        <p>{!'Total points to spend: ' + v.pointTotal }</p>
+    </div>
+
+
+    
+    
+    
+    <!-- Containers of all the Reward Options -->
+    <div style="text-align: center; background-color: #d8f0fe; padding-top: 3%">
+        <div style="display: inline-block; margin: 5px 30px 30px 30px; background-color: white; padding: 30px; width: 10%; border-radius: 30px; box-shadow: 10px 5px 5px #4077fe">
+            <h1>Ball 100 Points</h1>
+            <img style="width:100px; height:100px"  src="{!$Resource.DogBall}"/> 
+            <br/>
+            <lightning:button aura:id="ballPurchase" variant="success" label="Order" title="Success" onclick="{! c.handleSubmit }"/>
+        </div>
+        
+        <div style="display: inline-block; margin: 5px 30px 30px 30px; background-color: white; padding: 30px; width: 10%; border-radius: 30px; box-shadow: 10px 5px 5px #4077fe">
+            <h1>Leash 300 Points</h1>
+            <img style="width:100px; height:100px"  src="{!$Resource.DogLeash}"/>
+            <br/>
+            <lightning:button aura:id="leashPurchase" variant="success" label="Order" title="Success" onclick="{! c.handleSubmit }"/>
+            
+        </div>
+    </div> 
+    
+    
+    
+    <div style="text-align: center; background-color: #d8f0fe; padding-bottom: 40px">
+        <div style="display: inline-block; margin: 5px 30px 30px 30px; background-color: white; padding: 30px; width: 10%; border-radius: 30px; box-shadow: 10px 5px 5px #4077fe">
+            <h1>Catbox 400 Points</h1>
+            <img style="width:100px; height:100px"  src="{!$Resource.CatBox}"/> 
+            <br/>
+            <lightning:button aura:id="catBoxPurchase" variant="success" label="Order" title="Success" onclick="{! c.handleSubmit }"/>
+            
+        </div>
+        
+        <div style="display: inline-block; margin: 5px 30px 30px 30px; background-color: white; padding: 30px; width: 10%; border-radius: 30px; box-shadow: 10px 5px 5px #4077fe ">
+            <h1>Bone 200 Points</h1>
+            <img style="width:100px; height:100px"  src="{!$Resource.DogBone}"/> 
+            <br/>
+            <lightning:button aura:id="bonePurchase" variant="success" label="Order" title="Success" onclick="{! c.handleSubmit }"/>
+            
+        </div>
+    </div>
+    
+    
+    
+</aura:component>

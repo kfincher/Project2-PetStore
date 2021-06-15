@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AutoResponseRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <autoResponseRule>
+        <fullName>QuickResponse</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <formula>ISNEW()</formula>
+            <senderEmail>kameron.fincher@revature.net</senderEmail>
+            <senderName>Pet Store Service Support</senderName>
+            <template>unfiled$public/Case_Response</template>
+        </ruleEntry>
+    </autoResponseRule>
+</AutoResponseRules>

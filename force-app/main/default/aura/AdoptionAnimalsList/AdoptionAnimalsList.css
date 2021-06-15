@@ -3,3 +3,10 @@ h1.THIS{
     font-size: 16px;
 	font-weight: bold;
 }
+.THIS #BoldSearch{
+    font-weight: bold;
+    color:#383159;
+    font-size: 16px;
+	font-weight: bold;
+    margin:5px;
+}

@@ -1,0 +1,6 @@
+<aura:component >
+    <aura:handler name="render" value="{!this}" action="{!c.renderDate}"/>
+    <aura:attribute name="date" type="String"/>
+    <aura:attribute name="formattedDate" type="String"/>
+    {!v.formattedDate}
+</aura:component>

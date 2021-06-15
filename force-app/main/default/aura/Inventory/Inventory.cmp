@@ -1,0 +1,29 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes,forceCommunity:searchInterface" access="global" controller = "Inventory_CX_Aura">
+    <!--<body style="background-color: #87ceeb !important"/>-->
+    <aura:handler name = "init" value = "{!this}" action = "{!c.init}"/>
+    <aura:attribute name = "searchText" type = "String" default = ""/>
+    <aura:attribute name = "inventory" type = "Object"/>
+    <aura:attribute name = "columns" type = "List"/>
+    
+    <div style = "height: 50px; background-color: light blue;">
+        <div class="slds-form-element slds-lookup" data-select="single">
+            <h1 style = "font-style: bold;">Search the Inventory</h1>
+            <div class="slds-form-element__control">
+                <div class="slds-input-has-icon slds-input-has-icon--right">
+                    <lightning:buttonIcon iconName="utility:search" variant="bare" onclick="{!c.handleClick}" alternativeText="Search" class="slds-input__icon" />
+                    <ui:inputText value="{!v.searchText}" class="slds-lookup__search-input slds-input" placeholder="Search" />
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class = "slds-grid_align-end">
+        <lightning:card footer="Results" title="Search Results">
+            <!--<h1 style = "font-style: bold;">Search Results</h1>-->
+            <lightning:datatable aura:id = "dataTable" keyField = "id" data = "{!v.inventory}" columns = "{!v.columns}" hideCheckboxColumn="true"></lightning:datatable>
+    	</lightning:card>
+    </div>
+    
+        
+    
+</aura:component>

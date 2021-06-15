@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pet</fullName>
+    <active>true</active>
+    <label>Pet</label>
+    <picklistValues>
+        <picklist>Animal_Age__c</picklist>
+        <values>
+            <fullName>Adolescent %2810-20 years%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adult</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adult %2820%2B years%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Egg %280-65 days%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Junior %281-2 years old%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Juvenile %280-10 years%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kitten %285-8 months old%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Puppy %285-8 months old%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Senior</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Animal_Type__c</picklist>
+        <values>
+            <fullName>Alligator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dog</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

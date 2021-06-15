@@ -1,0 +1,16 @@
+<aura:component>
+    <aura:registerEvent name="apptSelectedEvent" type="c:apptSelectedEvent"/>
+    <aura:attribute name="apptList" type="Grooming_Appointment__c[]" />
+    
+    <div class="slds-text-heading_small">Appointments</div>
+    <table class="slds-table slds-table_cell-buffer slds-table_bordered">
+        <thead><th>Pet Name</th><th>Date/Time</th><th></th></thead>
+    	<aura:iteration items="{!v.apptList}" var="appt">
+        <tr>
+            <td>{!appt.Pet__r.Name}</td><td><c:DisplayTime time="{!appt.Appointment_Time__c}"/></td>
+            <td><lightning:button label="{!appt.Id}" onclick="{!c.apptDetailsHandler}">View Appointment</lightning:button></td>
+        </tr>
+		</aura:iteration>
+	</table>
+    
+</aura:component>

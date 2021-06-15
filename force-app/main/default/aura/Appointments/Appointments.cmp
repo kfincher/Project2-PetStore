@@ -1,0 +1,30 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes">
+    
+    <aura:handler name="apptListChange" event="c:AppointmentListEvent" action="{!c.updateApptList}"/>
+    <aura:handler name="apptSelectedEvent" event="c:apptSelectedEvent" action="{!c.updateSelectedAppt}"/>
+    
+    <aura:attribute name="apptList" type="Grooming_Appointment__c[]"/>
+    <aura:attribute name="selectedApptId" type="String"/>
+    <aura:attribute name="showGuide" type="boolean" default="false"/>
+    
+    <aura:if isTrue="{!v.showGuide}">
+        
+        <lightning:button label="Back to Search" onclick="{!c.setGuideFalse}"/>
+        <div class="slds-grid slds-wrap" style="background-color:#87ceeb">
+    		<div class="slds-size--2-of-3"><c:Guide/></div>
+        	<div class="slds-size--1-of-3"><c:DisplayGroomingAppointmentInfo apptId="{!v.selectedApptId}"/></div>
+		</div>
+        
+    <aura:set attribute="else">
+        
+        <lightning:button label="Show Guide" onclick="{!c.setGuideTrue}"/> 
+    	<div class="slds-grid slds-wrap" style="background-color:#87ceeb">
+    		<div class="slds-size--1-of-2" style="margin:0.5em"><c:GroomingApptsList apptList="{!v.apptList}"/></div>
+    		<div class="slds-size--1-of-3"><c:GroomingSchedulePage/></div>
+    		<div class="slds-size--1-of-3" style="margin:1em 0em"><c:DisplayGroomingAppointmentInfo apptId="{!v.selectedApptId}"/></div>
+		</div>
+        
+    </aura:set>  
+    </aura:if>
+    
+</aura:component>

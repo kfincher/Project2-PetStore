@@ -83,7 +83,7 @@ private class Controller_Test {
         String petName = 'Dash';
         Date startDate = Date.newInstance(2021, 5, 27);
         String diffPetName = 'Bud';
-        Adoption__c a = new Adoption__c(Name=petName, Animal_Type__c='Dog', Animal_Age__c='Adult', Status__c='New', 
+        Adoption__c a = new Adoption__c(Animal_Type__c='Dog', Animal_Age__c='Adult', Status__c='New', 
                                        Shelter_Start_Time__c = startDate);
         List<Adoption__c> pets = new List<Adoption__c>();
         pets.add(a);
@@ -98,7 +98,7 @@ private class Controller_Test {
     private static void matchTestTrueAdopt(){
         String petName = 'Dash';
         Date startDate = Date.newInstance(2021, 5, 27);
-        Adoption__c a = new Adoption__c(Name=petName, Animal_Type__c='Dog', Animal_Age__c='Adult', Status__c='New', 
+        Adoption__c a = new Adoption__c(Animal_Type__c='Dog', Animal_Age__c='Adult', Status__c='New', 
                                        Shelter_Start_Time__c = startDate);
         List<Adoption__c> pets = new List<Adoption__c>();
         pets.add(a);
@@ -121,7 +121,7 @@ private class Controller_Test {
     private static void searchTestSuccessAdopt(){
         String petName = 'Dash';
         Date startDate = Date.newInstance(2021, 5, 27);
-        Adoption__c a = new Adoption__c(Name=petName, Animal_Type__c='Dog', Animal_Age__c='Adult', Status__c='New', 
+        Adoption__c a = new Adoption__c(Animal_Type__c='Dog', Animal_Age__c='Adult', Status__c='New', 
                                        Shelter_Start_Time__c = startDate);
         List<Adoption__c> pets = new List<Adoption__c>();
         pets.add(a);

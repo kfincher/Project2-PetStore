@@ -1,0 +1,22 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes">
+    <lightning:recordEditForm aura:id="recordEditForm"
+                              objectApiName="Pet_Hotel__c"
+                              onsuccess="{!c.myAction}">
+        <lightning:messages />
+        <div class="slds-grid">
+            <div class="slds-col slds-size_1-of-2">
+                <lightning:inputField aura:id="field" fieldName="Pet__c" />
+                <!--<lightning:inputField fieldName="Name" />-->
+                <lightning:inputField aura:id="field" fieldName="Check_In__c" />
+                <lightning:inputField aura:id="field" fieldName="Check_Out__c" />
+            </div>
+            <div class="slds-col slds-size_1-of-2">
+                <lightning:inputField aura:id="field" fieldName="Room_Type__c" />
+                <lightning:inputField aura:id="field" fieldName="Room_Number__c" />
+                <lightning:inputField aura:id="field" fieldName="Pet_Hotel__c" />
+            </div>
+        </div>
+        <!--<lightning:button label="Back" class="slds-m-right_small slds-button_neutral" title="Back" onclick="{!c.load}"/>-->
+        <lightning:button class="buttonOutline" type="submit" label="Create new" /><div style="color:green" id="resultsTag"><br/></div>
+    </lightning:recordEditForm>
+</aura:component>

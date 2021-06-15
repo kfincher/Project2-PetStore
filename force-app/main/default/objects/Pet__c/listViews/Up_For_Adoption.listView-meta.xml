@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Up_For_Adoption</fullName>
+    <columns>NAME</columns>
+    <columns>Animal_Age__c</columns>
+    <columns>Animal_Type__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Up_For_Adoption__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Up For Adoption</label>
+</ListView>

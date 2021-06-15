@@ -1,0 +1,16 @@
+<aura:component >
+    <aura:attribute name="guidePage" type="Guide__c"/>
+	<div class="background">
+    	<c:GroomingHeaderCard headerTitle="{!guidePage.Page_Title__c}"/>
+        
+    	<lightning:button label="Gather Supplies" 	onclick="{!c.bodyContent}"/>
+    	<lightning:button label="Pre-Bath" 			onclick="{!c.bodyContent}"/>
+    	<lightning:button label="Bath" 				onclick="{!c.bodyContent}"/>
+    	<lightning:button label="Post-Bath" 		onclick="{!c.bodyContent}"/>
+        
+    	<c:BodyCard bodyContentHTML="{!guidePage.Instructions_HTML__c}"/>
+        
+        <lightning:button label="Previous" onclick="{!c.prevContent}"/>
+		<lightning:button label="Next" onclick="{!c.nextContent}"/>
+    </div>
+</aura:component>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Instructions_HTML__c</fullName>
+    <description>HTML-formatted instructions for this page - for display in grooming guide aura page.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>HTML-formatted instructions for this page - for display in the grooming guide aura app.</inlineHelpText>
+    <label>Instructions (HTML)</label>
+    <length>100000</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

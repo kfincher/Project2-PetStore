@@ -1,0 +1,3 @@
+<aura:event type="Component" description="Event template" >
+	<aura:attribute name="AppointmentsList" type="Grooming_Appointment__c[]"/>
+</aura:event>

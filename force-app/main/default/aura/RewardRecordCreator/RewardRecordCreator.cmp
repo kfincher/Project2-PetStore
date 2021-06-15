@@ -1,0 +1,18 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    <lightning:card>
+   <div style="margin-left: 40%; margin-right: 40%">
+    <img src="https://universalcontainers-5c8--c.visualforce.com/resource/1622841461000/PetSoarsLogo" style="width: 70px; height: 70px;"/>
+    </div>
+    <h1 style="text-align:center">Customer Service Record Creator</h1>
+    <br/>
+    <lightning:recordEditForm aura:id="recordEditForm" objectApiName="Opportunity" >
+        <lightning:messages />
+        <lightning:inputField fieldName="AccountId" value="{! v.recordId}" />
+        <lightning:inputField fieldName="Name" value="{! v.Name  }" />        
+        <lightning:inputField fieldName="CloseDate" aura:id="rrc"/>        
+        <lightning:inputField fieldName="StageName"  aura:id="rrc"/>        
+        <lightning:button class="slds-m-top_small" type="submit" label="Create new" onclick="{!c.handleClick}"/>
+    </lightning:recordEditForm>
+    </lightning:card>
+    
+</aura:component>

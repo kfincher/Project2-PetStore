@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>petstoreservice.help@gmail.com</email>
+    <name>Employee</name>
+    <queueMembers>
+        <users>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Adoption__c</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Grooming_Appointment__c</sobjectType>
+    </queueSobject>
+</Queue>

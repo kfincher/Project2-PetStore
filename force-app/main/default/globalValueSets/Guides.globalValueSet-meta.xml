@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Grooming</fullName>
+        <default>false</default>
+        <label>Grooming</label>
+    </customValue>
+    <customValue>
+        <fullName>Alligator</fullName>
+        <default>false</default>
+        <label>Alligator</label>
+    </customValue>
+    <description>List of guides available in this org.</description>
+    <masterLabel>Guides</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

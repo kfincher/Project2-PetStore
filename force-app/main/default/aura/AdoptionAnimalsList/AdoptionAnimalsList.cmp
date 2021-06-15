@@ -1,28 +1,39 @@
-<aura:component controller="DisplayAdoptions_CC_Aura" implements="force:appHostable" access="global">
-     <!--<aura:handler name="init" value="{!this}" action="{!c.myAction}" />-->
+<aura:component controller="DisplayAdoptions_CC_Aura" implements="forceCommunity:availableForAllPageTypes" access="global">
+    <aura:handler name="init" value="{!this}" action="{!c.init}" />
     <aura:attribute name="recordId" type="Id" />
-    <aura:attribute name="heyStore" type="String" />
+    <aura:attribute name="listIndex" type="Integer" />
     <aura:attribute name="Adoptions" type="Object" />
+    <aura:attribute name="prevOn" type="Boolean" default="true"/>
+    <aura:attribute name="nextOn" type="Boolean" default="true"/>
     <aura:attribute name="Columns" type="List" />
+    <aura:attribute name="rowCols" type="List" />
     <aura:attribute name="Pet" type="String" />
-    {!v.Adoptions}
-    {!v.Columns}
-    <h1>Search Pets</h1>
     <aura:attribute name="searchText" type="String" default=""/>
-    Adoption Search:
-    <div class="slds-form-element slds-lookup" data-select="single">
-        <div class="slds-form-element__control">
-            <div class="slds-input-has-icon slds-input-has-icon--right">
-                <lightning:buttonIcon iconName="utility:search" variant="bare" onclick="{! c.myAction }" alternativeText="Search" class="slds-input__icon" />
-                <ui:inputText value="{!v.Pet}" class="slds-lookup__search-input slds-input" placeholder="Search" />
-            </div>
-        </div>
-    </div>
-    
-    <div style="height:400px">
+
+    <div style="height:325px">
         <p class="slds-p-horizontal_small">
-        <lightning:datatable aura:id="dataTable" keyField="id" data="{!v.Adoptions}" columns="{!v.Columns}" hideCheckboxColumn="true"></lightning:datatable>
+            <div id="BoldSearch">Search Pets</div> 
+            
+            
+            <div id="SearchMove">
+                <div class="slds-form-element slds-lookup slds-m-left_medium slds-m-top_medium" data-select="single">
+                    <div class="slds-form-element__control">
+                        <div class="slds-input-has-icon slds-input-has-icon--right slds-m-bottom_x-small">
+                            <div class="slds-grid" style="height:30px">
+                                Name Search:
+                                <lightning:input variant="label-inline" value="{!v.Pet}" class="slds-p-around_none slds-size_1-of-6 slds-m-right_x-small"  placeholder="" />
+                                <lightning:button label="Search" class="slds-m-right_small" title="Search" onclick="{! c.myAction }"/>
+                                
+                                <lightning:button label="Previous" disabled="{!v.prevOn}" class="slds-m-right_small slds-button_neutral" title="Previous" onclick="{! c.prevList }"/>
+                                <lightning:button label="Next" disabled="{!v.nextOn}" title="Next" onclick="{! c.nextList }"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <lightning:datatable aura:id="dataTable" keyField="id" data="{!v.Adoptions}" columns="{!v.Columns}" hideCheckboxColumn="true"></lightning:datatable>
+            <div id='resultsTag'></div>
         </p>
     </div>
-
+    
 </aura:component>

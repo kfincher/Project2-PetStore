@@ -1,0 +1,4 @@
+<aura:component >
+    <aura:attribute name="currentHeader" type="String"/>
+    <c:HeaderCard headerText="Pet Store, Grooming Guide" headerTitle="{!v.currentHeader}"/>	
+</aura:component>
