@@ -4,7 +4,13 @@ Now that you’ve created a Salesforce DX project, what’s next? Here are some 
 
 ## How Do You Plan to Deploy Your Changes?
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+1. ##### Clone the repository down locally.
+   - ##### `git clone https://github.com/kfincher/Project2-PetStore`
+2. ##### In VS Studio Code, in force-app\main\default 
+   - ##### In autoResponseRules\CaseautoResponseRules-meta.xml, replace the email in <senderemail> with a user's email from your org 
+   - ##### in escalationRules\CaseescalationRules-meta.xml, replace the emails in both instance of <notifyTo> with a user's username from your org 
+   - ##### In settings\Case.settings=meta.xml, replace the email in <defaultCaseOwner> with a user's username from your org
+   - ##### Deploy to org using: `sfdx force:source:deploy -x manifest/package.xml`
 
 ## Configure Your Salesforce DX Project
 
